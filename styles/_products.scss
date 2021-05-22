@@ -1,0 +1,139 @@
+.products-container {
+    background: #323232;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#products {
+    min-height: 90vh;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    padding-top: 3rem;
+
+    .underline {
+        width: 10rem;
+        height: 0.2rem;
+        background-color: #FAE235;
+        margin: 0 auto 2rem;
+    }
+    h1 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        columns: yellow;
+        text-align: center;
+        font-family: 'Lobster', sans-serif;
+        font-size: 4rem;
+        font-weight: 400;
+        text-shadow: 0.2rem 0.2rem 1rem black;
+    }
+
+    .product-container {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        color: black;
+        padding: 2rem 0 3rem 0;
+        overflow: hidden;
+        
+        
+        .product {
+            background: white;
+            margin: 0rem 1.5rem 0 1.5rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 2rem;         
+            overflow: hidden;
+            box-shadow: 0.3rem 0.3rem 1rem black;
+            
+
+            img {
+                object-fit: cover;
+                max-height: 2.5in;
+                width: auto;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+                padding: 1rem 0 1.5rem;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.1rem;
+                color: rgb(37, 37, 37);
+                padding: 0rem 0.6rem 2rem 0.6rem;
+            }
+        }
+        
+
+    }
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+/********* Coming Soon Section ****************/
+
+.soon-container {
+    background-color: rgb(31, 31, 31);
+}
+
+.soon {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0 5rem 0;
+    .underline {
+        width: 10rem;
+        height: 0.2rem;
+        background-color: #FAE235;
+        margin: 0 auto 2rem;
+    }
+    h1 {
+        font-family: "Lobster", cursive;
+        font-size: 4rem;
+        text-shadow: 0.3rem 0.3rem 2rem black;
+        padding: 2rem 0 3rem 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0.4rem 0.4rem 3rem rgb(95, 95, 1);
+    }   
+
+    .btn {
+        padding: 7.5rem 0 3rem;
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 0.75rem 1.5rem;
+            background-color: yellow;
+            color: black;
+            font-weight: 600;
+            transition: 0.5s;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            &:hover {
+                background-color: rgb(78, 77, 0);
+                color: white;
+                border: 2px solid white;
+            }
+        }
+    }
+}

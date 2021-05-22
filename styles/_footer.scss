@@ -1,0 +1,39 @@
+.footer {
+    background-color: rgb(0, 0, 0);   
+
+    .contact-container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+
+        
+        h5 {
+            color: white;
+            font-family: "Quicksand", sans-serif;
+            letter-spacing: 130%;
+            font-size: 0.9rem;
+            font-weight: 400;
+            flex: 5;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            list-style: none;
+            li img{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                filter: invert(1);
+                box-shadow: 0 0 1rem white; 
+                transition: 0.5s;
+                &:hover {
+                    box-shadow: 0 0 1rem rgb(0, 0, 255);        
+                }
+            }
+        }
+    }
+}
